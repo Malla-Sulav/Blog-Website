@@ -1,0 +1,172 @@
+@import 
+url('https://fonts.google.com/specimen/Raleway?selection.family=Raleway:300, 400, 700, 900');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+	transition: all ease-in-out 250ms;
+}
+
+body {
+	margin: 0;
+	padding: 20px;
+	background-color: #6c6e70;
+    font-family: 'Raleway', sans-serif;
+}
+
+.row::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* header section
+#####################*/
+
+header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 1em;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 45px;
+    width: 150px;
+    height: 120px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin: 1em;
+}
+
+nav a {
+	font-weight: 1000;
+	font-style: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+	padding: 8px 15px 5px;
+	font-size: .75rem;
+	overflow: hidden;
+	transition: 1.15s;
+	color: #ffffff;
+		
+}
+
+nav a:hover,
+nav a:focus {
+    color: #000000;
+    background: #3b3f77;
+    box-shadow: 0 0 10px #89a0e0, 0 0 80px #2d3b79, 0 0 220px #4671e6;
+}
+
+@media (min-width: 60rem) {
+	.logo {
+		float: left; 
+		left: 0;
+		height: 150px;
+		width: 180px;
+		margin-left: 25px;
+		margin-top: 0;
+}
+	nav {
+		float: right;
+	}
+
+	nav a {
+		font-size: .95rem;
+	}
+}
+
+h1 {
+	text-align: center;
+	font-size: 60px;
+	color: rgb(8, 6, 26);
+	margin: 1.5px 0px;
+}
+
+h2 {
+	color: #000000;
+	margin: 1.5 0px;
+}
+
+.Box {
+	margin-top: 120px;
+}
+
+.left-column {
+	float: left;
+	width: 75%;
+}
+
+.left-column .Imgbox img {
+	height: 50%;
+	width: 45%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+h2 {
+	color: #000000;
+}
+
+h3 {
+	color: #121836;
+}
+
+.right-column {
+	float: right;
+	width: 25%;
+	padding-left: 20px;
+}
+
+.Imgbox {
+	padding: 20px;
+	background-color: #ffffff;
+	padding-top: 50px;
+	margin-top: 20px;
+}
+
+.Imgbox img {
+	width: 100%;
+}
+
+.right-column .Imgbox img {
+	margin-bottom: 10px;
+}
+
+
+footer {
+	background-color: #19181d;
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+.footer-option {
+	color: #00bbc2;
+}
+
+.container {
+	color: #ffffff;
+}
+
+@media(max-width:800px) {
+	.left-column, .right-column {
+		width: 100%;
+		padding: 0px;
+	}
+}

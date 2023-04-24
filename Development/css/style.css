@@ -1,0 +1,500 @@
+@import 
+url('https://fonts.google.com/specimen/Raleway?selection.family=Raleway:300, 400, 700, 900');
+
+
+* {
+	box-sizing: border-box; 
+	 transition: all ease-in-out 250ms;
+}
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	background: url(../Images/Home/GalleryBG.jpg);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+
+.container {
+	width: 95%;
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+
+.clearfix::after,
+section::after,
+footer::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* column system
+###################*/
+
+[class^=col-] {
+	width: 100%;
+	margin-top: 1em;
+}
+
+[class^=col-]:first-child{
+	margin-top: 0;
+}
+
+.col-1 {
+	width: 33.3333334%;
+	float: left;
+}
+
+@media (min-width: 40rem) {
+
+	[class^=col-] {
+		float: left;
+		padding: 0 .5em;
+		margin-top: 0;
+	}
+
+	[class^=col-]:first-child{
+		padding-left: 0;
+	}
+	
+	[class^=col-]:last-child{
+		padding-right: 0;
+
+	}
+	
+
+  .col-3 {
+	width: 50%;
+  }
+
+  .col-1 {
+	width: 16.6666%;
+  }
+}
+
+
+
+
+/* typology
+##############*/
+
+h1 {
+	font-weight: 300;
+	font-size: 1.7rem;
+	margin-top: 0;
+}
+
+p{
+	margin-top: 0;
+	line-height: 1.5;
+}
+
+p:last-of-type {
+	margin-bottom: 0;
+}
+
+.theme {
+	font-size: 2.5rem;
+	margin-bottom: 0.75em;
+	font-weight: 900;
+	margin-top: 2.5em;
+	color: #000000;
+	font-family: 'Raleway', sans-serif;
+}
+
+.theme h1 {
+	color: #ffffff;
+	background: rgb(25, 24, 42, 0.5)
+}
+
+.theme span {
+	font-weight: 300;
+	display: block;
+	font-size: .65em;
+	margin-top: 0;
+	color: #ffffff9d;
+	font-family: Arial, sans-serif
+}
+
+.theme-mid {
+	margin: 0 0 .5em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.theme-mid span {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+}
+
+.unstyle-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	color: #000000;
+}
+
+@media (min-width: 60rem) {
+
+	p {
+		font-size: 1.2rem;
+		line-height: 1.6;
+	}
+
+	.theme {
+		font-size: 3.7rem;
+	}
+
+	.theme h1 {
+		height: 100px;
+		width: 1130px;
+		padding-top: 15px;
+	}
+}
+
+
+
+
+/* button section
+#####################*/
+
+
+.button-small {
+	font-size: .75em;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 1.75px;
+	border-style: solid;
+	padding: .15em .5em;
+	border-color: #383d69;
+	position: relative;
+    display: inline-block;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.button-small:hover
+{
+    color: #2947a8;
+    background: #182244;
+    box-shadow: 0 0 10px #23294d, 0 0 40px #23305a, 0 0 80px #646ec2;
+}
+
+
+
+/* header section
+#####################*/
+
+header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 1em;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 45px;
+    width: 150px;
+    height: 120px;
+}
+
+
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin: 1em;
+}
+
+nav a {
+	font-weight: 1000;
+	font-style: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+	padding: 8px 15px 5px;
+	font-size: .75rem;
+	overflow: hidden;
+	transition: 1.15s;
+	color: #ffffff;
+		
+}
+
+nav a:hover,
+nav a:focus {
+    color: #000000;
+    background: #3b3f77;
+    box-shadow: 0 0 10px #89a0e0, 0 0 80px #2d3b79, 0 0 220px #4671e6;
+}
+
+
+@media (min-width: 60rem) {
+	.logo {
+			float: left; 
+			left: 0;
+			height: 150px;
+			width: 180px;
+			margin-left: 25px;
+			margin-top: 0;
+	}
+
+	nav {
+		float: right;
+	}
+
+	nav a {
+		font-size: .95rem;
+	}
+}
+
+
+
+
+/* home portion
+##################*/
+
+.home {
+	background-image: url(../Images/Home/blackwhite.jpg);
+	padding: 10em 0;
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+}
+
+@media (min-width: 60rem) {
+	.home {
+		height: 100vh;
+		padding-top: 35vh;
+	}
+}
+
+/* home textbox
+##################*/
+
+.home-textbox {
+    background-color:#222e35;
+	right: 20px;
+    padding: 3.5em;
+    width: 100vw;
+    margin-left: -2%;
+    outline: 2px solid #00b7ff;
+    outline-offset: -2.65em;
+    color: #cacaca;
+    position: relative;
+}
+
+.home-textbox h1 {
+    color: #00d9ff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: .75em;
+    background: #222e35;
+    padding: 0 .145em;
+}
+
+@media (min-width: 25rem) {
+
+	.home-textbox {
+		font-size: 0.95em;
+		padding: 3.75em;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	.home-textbox h1 {
+		top: .5em;
+		padding: -0.5em .325em;
+	}
+
+}
+
+@media (min-width: 60rem) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	.home-description {
+		background-image: url(../Images/Home/travel5.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-bottom: 10em;
+	}
+
+	.home-textbox {
+		width: 50%;
+		padding: 5.5em;
+		outline-offset: -3.75;
+		margin-left: -5.5%;
+		top: -5em;
+		text-align: justify;
+		box-shadow: 0 0 4em 0 rgba(0,0,0,25);
+		padding-bottom: 3.25em;
+		padding-right: 5.75em;
+	}
+	
+
+	.home-textbox h1 {
+		top: .3em;
+		left: 4.75rem;
+		transform: translateX(0);
+		padding: -0.5em .325em;
+	}
+
+}
+
+
+
+.visit-box {
+	height: 65px;
+	background-color: #254352;
+	padding: .5em 0 .5em 0;
+}
+
+.visit h1 {
+	font-size: 2.55em;
+	color: #ffffff;
+	font-family: 'Arial Narrow Bold', sans-serif;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding-bottom: .5em;
+}
+
+
+
+@media (min-width: 60rem) {
+	.visit-box {
+		margin: 0 17.75em 0 17.75em;
+	}
+}
+
+.travel-image {
+	margin: 0;
+	position: relative;
+}
+
+.travel-image img {
+	display: block;
+}
+
+.travel-desc {
+	position: absolute;
+	z-index: 100;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
+	color: #ffffff;
+	background: rgba(0,0,0,.6);
+	padding-bottom: 2 em;
+}
+
+.travel-desc p {
+	margin: 1em;
+}
+
+@media (min-width: 37rem) {
+	.travel-image {
+		width: 50%;
+		float: left;
+	}
+
+}
+
+@media (min-width: 60rem) {
+	.travel-image {
+		width: 33.33333334%;
+		float: left;
+		overflow: hidden;
+	}
+
+
+	.travel-desc {
+		transform: translateY(150%);
+	}
+
+	.travel-image:hover .travel-desc {
+		transform: translateY(0);
+	}
+}
+
+/* mid foot section
+####################*/
+
+.mid-foot {
+	background-image: url(../Images/Home/sunset.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 5em 0;
+	color: #ffffff;
+}
+
+.button-mid {
+	font-size: 1.20em;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 1.75px;
+	border-style: solid;
+	padding: .15em .5em;
+	border-color: #ffffff;
+	position: relative;
+    display: inline-block;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.20s;
+}
+
+.button-mid:hover
+{
+    color: #ffffff;
+    background: #2c3f72;
+    box-shadow: 0 0 10px #7c82a7, 0 0 80px #99a0ff, 0 0 220px #2b2a8a;
+}
+
+
+/* footer section */
+footer {
+	background: #232323;
+	color: #ffffff;
+	text-align: left;
+	padding: 2em 0 2em 1em;
+}
+
+.footer-option {
+	color: #ffffff;
+}
+
+.foot {
+	margin-top: 15px;
+}
+
+@media (min-width: 60rem) {
+	.foot {
+		margin-top: 120px;
+		margin-left: 190px;
+	}
+}
